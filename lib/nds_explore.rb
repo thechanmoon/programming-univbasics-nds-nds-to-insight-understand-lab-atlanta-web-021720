@@ -9,5 +9,8 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  pretty_print_nds(directors_database)
+  #pretty_print_nds(directors_database)
+  directors_database[0][:movies].length.times do
+    puts directors_database[0][:movies].:title
+  end
 end
